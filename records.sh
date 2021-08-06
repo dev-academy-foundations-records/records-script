@@ -80,7 +80,7 @@ function copy_repo {
         allBranches=$(git branch -r)
         cd ..
 
-        allBranches=${allBranches#*origin/HEAD -> origin/master}
+        allBranches=${allBranches#*origin/HEAD -> origin/main}
 
         for branch in $allBranches; do
             copy_branch ${branch#*origin/}
