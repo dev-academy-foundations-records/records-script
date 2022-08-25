@@ -3,16 +3,16 @@
 
 
 # change these variables :)
-students=("emilyparkes" "josephquested" "kelly-keating" "oliver-harcourt")
+students=("github-username")
 cohort="COHORT-YEAR"
 
 # create your own access token (with repo permissions)
 # https://github.com/settings/tokens/new?scopes=repo&description=Foundations%20records%20script
-my_access_token="somerandomstringofchars"
+my_access_token="asecret"
 
 # change these at your own risk ;)
 # (aka pls don't)
-remote="https://github.com/eda-foundations-records"
+remote="git@github.com:eda-foundations-records"
 out="$(pwd)/records-output-$cohort.txt"
 
 function get_records {
@@ -46,7 +46,7 @@ function get_records {
     git commit -qm "$cohort - $(date '+%a %d %b %Y')"
     echo "--> Commited: $(date '+%a %d %b %Y')\n\n" 
 
-    git push origin master
+    git push origin main
     echo "\nEverything pushed to repo\nRemoving repo folder..."
 
     cd ..
@@ -63,11 +63,11 @@ function create_records_repo {
 function copy_repo {
     repo=$1
 
-    echo "\n\nCopying $repo - https://github.com/$name/$repo.git\n"
+    echo "\n\nCopying $repo - git@github.com:$name/$repo.git\n"
 
-    ( git ls-remote https://github.com/$name/$repo.git -q ) && ( 
+    ( git ls-remote git@github.com:$name/$repo.git -q ) && ( 
 
-        git clone https://github.com/$name/$repo.git original-$repo
+        git clone git@github.com:$name/$repo.git original-$repo
 
         # if [ -d "$repo" ]; then
         #     rm -rf $repo
@@ -89,7 +89,7 @@ function copy_repo {
         log "$repo  -  Done"
         rm -rf original-$repo
 
-    ) || ( echo "Moving on....." && log "$repo  -  No such repo https://github.com/$name/$repo.git")
+    ) || ( echo "Moving on....." && log "$repo  -  No such repo git@github.com:$name/$repo.git")
 }
 
 function copy_branch {
