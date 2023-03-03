@@ -1,0 +1,116 @@
+/* Game board and text not responsive yet*/
+
+body {
+  background-color:white;
+  font-family: 'Permanent Marker', cursive;
+  text-align: center;
+  margin-top: 40px;
+  }
+  
+table {
+    margin-right: center;
+    margin-left: center;
+    margin: 0 auto;
+    border-spacing: 0;
+    border-collapse: collapse;
+  }
+  
+
+h1 {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 2vw;
+    color: black;
+  }
+  
+td {
+    width: 8vw;
+    height: 8vw;
+    text-align: center;
+    font-size: 300%;
+    border: black solid 3px;
+    color: black;
+    position: relative;
+  }
+
+h2 {
+  text-align: center;
+  font-size: 2vw;
+  color: #4c2c92;
+}  
+
+/* Marking style */
+
+.x::before {
+  position: absolute;
+  content: "";
+  display: block;
+  background-color: #000;
+  left: 0px;
+  top: 0px;
+  width: 1.5vw;
+  height: 8vw;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  transform: translate(220%, 0%) rotate(-45deg);
+}
+
+.x::after {
+  position: absolute;
+  content: "";
+  display: block;
+  background-color: #000;
+  left: 0px;
+  top: 0px;
+  width: 1.5vw;
+  height: 8vw;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  transform: translate(220%, 0%) rotate(45deg);
+}
+
+.o::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(18%, 13%);
+  content: "";
+  background-color: #000;
+  width: 6vw;
+  height: 6vw;
+  border-radius: 50%;
+}
+.o::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(52%, 43%);
+  content: "";
+  background-color: #fff;
+  width: 4vw;
+  height: 4vw;
+  border-radius: 50%;
+}
+
+ .win {
+  animation: blink 0.5s linear;
+  animation-iteration-count: 2;
+}
+
+.lose {
+  opacity: 0.5;
+}
+
+/* Animation */
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

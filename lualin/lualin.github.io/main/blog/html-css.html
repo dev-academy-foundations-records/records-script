@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>HTML/CSS</title>
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicons -->
+  <link rel="icon" href="../assets/img/light-logo.png">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bellota+Text&family=Dosis:wght@300;400;500&display=swap"
+    rel="stylesheet">
+
+  <!-- CSS Files Link -->
+  <link rel="stylesheet" href="../assets/vendor/aos/aos.css">
+  <link rel="stylesheet" href="../assets/vendor/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../assets/vendor/bootstrap-icons/bootstrap-icons.css">
+  <link rel="stylesheet" href="../assets/vendor/swiper/swiper-bundle.min.css">
+
+  <!-- Main CSS File link -->
+  <link rel="stylesheet" href="../assets/css/main.css">
+</head>
+
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-light custom-navbar">
+    <div class="container">
+      <a class="navbar-brand" href="../index.html">Sean's Blog</a>
+      <a href="#" class="burger" data-bs-toggle="collapse" data-bs-target="#main-navbar">
+        <span></span>
+      </a>
+    </div>
+  </nav>
+
+  <div class="collapse navbar-collapse custom-navmenu" id="main-navbar">
+    <div class="container py-2 py-md-5">
+        <div class="row align-items-start">
+            <ul class="custom-menu">
+                <li class="active"><a href="../index.html">Home</a></li>
+                <li><a href="../profile.html">Profile</a></li>
+                <li><a href="#"" data-bs-toggle="collapse" data-bs-target="#tech-navbar">Tech &hksearow;</a>
+                    <div class="collapse navbar-collarpse" id="tech-navbar">
+                        <ul class="custom-submenu">
+                            <li><a href="../tech/javascript-home.html"">Javascript</a></li>
+                        </ul>
+                    </div>                        
+                </li>
+                <li><a href="#">Core</a></li>
+                <li><a href="#" data-bs-toggle="collapse" data-bs-target="#foundation-navbar">Foundation &hksearow;</a> 
+                    <div class="collapse navbar-collapse" id="foundation-navbar">
+                        <ul class="custom-submenu">
+                            <li>Sprint 1 &hksearow;&hksearow;
+                                <ul class="custom-submenu">
+                                    <li><a href="te-houtaewa-template.html">Te Houtaewa</a></li>
+                                </ul>
+                            </li>
+                            <li>Sprint 2 &hksearow;&hksearow;
+                                <ul class="custom-submenu">
+                                    <li><a href="html-css.html">HTML/CSS</a></li>
+                                    <li><a href="identity-values.html">Identity/Values</a></li>
+                                    <li><a href="learning-plan.html">Learning Plan</a></li>
+                                </ul>
+                            </li>
+                            <li>Sprint 3 &hksearow;&hksearow;
+                                <ul class="custom-submenu">
+                                    <li><a href="js-dom.html">JS-DOM</a></li>
+                                    <li><a href="emotional-intelligence.html">Emotional Intelligence</a></li>
+                                </ul>
+                            </li>
+                            <li>Sprint 4 &hksearow;&hksearow;
+                                <ul class="custom-submenu">
+                                    <li><a href="neuroplasticity.html">Neuroplasticity</a></li>
+                                    <li><a href="problem-solving.html">Problem Solving</a></li>
+                                </ul>
+                            </li>
+                            <li>Sprint 5 &hksearow;&hksearow;
+                                <ul class="custom-submenu">
+                                    <li><a href="foundations-reflection.html">Foundations Reflection</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>        
+                </li>
+            </ul>
+        </div>
+    </div>
+  </div>
+  <!-- Navigation Bar -->
+
+  <!-- Blog Header Image -->
+  <header class="blog-header-image sprint-2">
+    <div class="container h-100">
+      <div class="row h-100 align-items-center">
+        <div class="col-12 text-center">
+          <h1 class="fw-bolder">HTML/CSS</h1>
+          <p class="lead"></p>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- Blog Header Image -->
+
+  <!-- Contents List -->
+  <section class="content-list container-fluid">
+    <div class="row">
+      <h2>What are the best practices associated with using classes vs. ids?</h2>
+      <span><br></span>
+      <h3>1. Calling Name</h3>
+      <p>
+        When calling a class, put a full stop(.) in front of the class name. When importing an ID, a # sign is placed in
+        front of the ID value. The following is an example of a tag with both an id value and a class name, decorated
+        using css.
+      </p>
+      <img src="../assets/img/sprint-2/html-css/html-css-1.png" alt="">
+      <span><br></span>
+      <hr>
+      <h3>2. Duplicate Use</h3>
+      <p>
+        Classes can be used as duplicate, so the same class name can be used anywhere on the page. However, duplicate
+        IDs cannot be used. An ID can only be used once on a page.
+      </p>
+      <img src="../assets/img/sprint-2/html-css/html-css-2.png" alt="">
+      <span><br></span>
+      <hr>
+      <h3>3. Limitation of Class & ID of an Element</h3>
+      <p>
+        In the case of a class, multiple class names can be applied to one element. However, only one ID can be applied
+        to an element.
+      </p>
+      <img src="../assets/img/sprint-2/html-css/html-css-3.png" alt="">
+      <span><br></span>
+    </div>
+  </section>
+  <!-- Contents List -->
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+          <p class="footer-title"> Copyright Sean. All Rights Reserved</p>
+          <p class="footer-text"></p>
+      </div>
+    </div>
+  </footer>
+  <!-- Footer -->
+
+  <!-- Vendor JS files -->
+  <script src="../assets/vendor/aos/aos.js"></script>
+  <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+body {
+  background-color:rgb(255, 242, 214);
+  font-family: 'Permanent Marker', cursive;
+  text-align: center;
+  margin-top: 40px;
+  }
+  
+table {
+    margin-right: center;
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: center;
+    background-color: rgb(165, 88, 238);
+    text-align: center;
+    margin: 0 auto;
+    border-spacing: 0;
+    border-collapse: collapse;
+  }
+  tr {
+    border-radius:25%;
+    text-align: center;
+  }
+   
+td {
+    width: 3vw;
+    height:3vw;
+    text-align: center;
+    font-size: 200%;
+    border: black solid 3px;
+    color: rgb(224, 238, 175);
+    border-radius: 55% 55%;
+    border-width: 0.10em;
+    border-style:groove;
+   
+  }
+  
+
+h2 {
+  text-align: center;
+  font-size: 2vw;
+  color: #4c2c92;
+}  
+.cal-h1 {
+  text-align: center;
+  font-size: 2vw;
+  color: rgb(66, 7, 7);
+}
+
+.button {
+  width: 3vw;
+  height:3vw;
+  font-size: 0.70em;
+  text-align: center;
+}

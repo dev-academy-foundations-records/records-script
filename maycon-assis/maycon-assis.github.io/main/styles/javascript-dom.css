@@ -1,0 +1,66 @@
+body {
+  background-color: burlywood;
+}
+ .navbar {
+  height: 230px;
+  text-align: center;
+  
+}
+h1, h3{
+  display: inline;
+}
+h1 a{
+  font-size: 150px;
+  font-family: 'Indie Flower', cursive;
+  color: darkred;
+  margin-right: 0px;
+}
+a {
+  text-decoration: none;
+  color: black;
+  
+}
+li {
+  list-style: none;
+  float: right;
+  width: 15em;
+  font-size: 25px;
+  font-family: 'Indie Flower', cursive;
+  
+}
+ul {
+  text-align: right;
+}
+h3{
+  font-family: 'Quicksand', sans-serif;
+}
+.home {
+  text-align: center;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 25px;
+  margin-top: 5%;
+  margin: auto;
+  width: 33%
+  
+  
+}
+
+#imagestore {
+  height: auto;
+  width: 500px;
+}
+@media (max-width: 400px){
+  li {
+    list-style: none;
+    float: left;
+    width: 15em;
+    font-size: 15px;
+    font-family: 'Indie Flower', cursive;
+    
+  }
+  .home{
+    width: 100%;
+  }
+  
+}
+  

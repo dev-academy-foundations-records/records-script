@@ -1,0 +1,176 @@
+<!DOCTYPE HTML>
+<HTML lang="en">
+  <head>
+    <title>BLOG | JavaScript & The DOM</title>
+    <link rel="icon" type="image/x-icon" href="../images/favicon.png">
+    <meta charset = "UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../styles/main.css" rel="stylesheet" type="text/css">
+  </head> 
+  <body>
+    <div class="background">
+      <div class="header"> 
+        <div class="main-title">
+          <h1>BLOG.</h1>
+        </div>
+        <div> <!--navbar-->
+          <nav>
+            <a class="nav-a" href="../index.html">HOME</a>
+            <a class="nav-a" href="../about.html">ABOUT</a>
+            <a class="nav-a" href="./blog.html">BLOG</a>
+            <a class="nav-a" href="../stuff.html">STUFF</a>
+          </nav>
+        </div>  
+      </div>
+      <div class="blog-title"  id="tech">
+        <a href="./blog.html"><p>BACK</p></a>
+        <h2>JavaScript & The DOM</h2>
+        <h6>27 Jan 2023 | Sprint 3 | Tech</h6>
+      </div>  <!--blog title-->
+      <div class="detailing-purple"></div>
+      <div class="max-width">
+        <div class="blog-content">
+          <div class="blog-q"> <!--blog question 1-->
+            <div>
+              <h3>What is JavaScript & how does it relate to HTML & CSS?</h3>
+              </div>
+                <p> 
+                  HTML and CSS alone do not provide much of an exciting user experience on a web page. Like dating a beautiful, vapid person, they may look nice, and are able to get themselves out of bed and stand up straight, but socially it's like interacting with a spoon. 
+              </p>
+              <div class="quote">
+                <img src="https://i.kym-cdn.com/entries/icons/original/000/037/864/wallcover.jpg" alt="person-talking-to-brick-wall">
+              </div>
+              <p>
+                JavaScript is the substance of the page, or personality if you will, the thing that makes it exciting to interact with and makes you want to see it again. It not only responds to the questions you ask, but also asks them back and makes the interaction more enjoyable... 
+              </p>
+              <p>In short, you can have HTML and CSS with no JavaScript, but its now 2023 and people expect more from a webpage than a nice haircut a defined jawline.</p>
+          </div> <!--blog question 1-->
+          <div class="blog-q"> <!--blog question 2-->
+            <div>
+              <h3>Explain control flow and loops...</h3>
+              </div>
+              <div class="img-ex">
+                <p> 
+                  I'd imagine that due to computer programming being developed mainly in the western world, when a computer learned to read a file of code, its default is to read from top to bottom, left to right, one line at a time, like most of the people in those countries would if they could also read. This is known as...
+              </p>
+              <img src="https://www.themailbox.com/storage/thumbnails/155202_0_LG.jpg" alt="learn-to-read-info">
+            </div>
+              <div class="centre-heading">            
+              <h4>Control Flow</h4>
+            </div>
+              <p>As it is quite common to need the computer to run a line of code over and over though, we don't want to have to type out the line of code every time it needs to run or the file would be very long. We can in these instances use various structures to alter the control flow so that the computer will read some lines multiple times, or skip some lines. One type of structure that alters the control flow is...</p>
+              <h4>Loops</h4>
+              <p>A loop is a set of instructions inside of some curly brackets that follows some information about how many times to loop through those instructions. This information includes indicators to the computer about when to start, and when to stop.</p>
+              <img src="../images/for-loop.jpg" alt="simplified-diagram-of-for-loop">
+              <p>The computer can be thought of as a derp that is being bargained with to do a repetitive task. In the example here the person is providing a starting index to the computer (i) that starts at 0, and for every time the computer runs through that set of instructions it is told to add 1 to the 0 index it started with. Then when it's got 10 indices it should stop running the loop and continue with the normal control flow.</p>
+              <div class="img-ex">
+                <img src="../images/feed-cats-loop.jpg" alt="passive-aggressive-code-block-example-of-how-a-for-loop-can-execute-a-menial-task-like-feeding-the-cats-without-being-asked-multiple-times">
+              <p>For example if we wanted the computer to <em>use its own initiative</em> and feed the cats without having to <em>literally ask every single time</em>, we could give it a for loop that says to feed the cats until there is no more food left. Then, like magic it would feed the cats without being prompted until there is no more food left! Imagine...</p>
+                
+            </div>
+          </div> <!--blog question 2-->
+          <div class="blog-q"> <!--blog question 3-->
+            <div>
+              <h3>Describe the DOM and explain how you may interact with it...</h3>
+              </div>
+                <p> 
+                  The Document Object Model (DOM) is a set of rules for HTML that allows multiple programming languages to add, change and remove elements and attributes of an HTML file. 
+                </p>
+                <p>Without the DOM it would be difficult to know where to look to find a certain element, but with DOM knowledge we know that an HTML file will contain objects such as a root element, with parent-child relationships. The more common elements (things) are things like, a head and a body that tend to be siblings. And then there are other more customised elements like divs, spans, p tags, and heading tags. Each of those 'things' can have attributes (characteristics) of their own; 'p' tags will contain a paragraph of text, and 'a' tags will contain a href link.
+              </p>
+              <p>Each of these different 'things' that can be accessed are referred to as 'nodes'.</p>
+              <img src="../images/TheDOM.gif" alt="an-animated-gif-of-my-DOM-interpretation-using-tree-analogy">
+              <p>I've used my template blog HTML file as an example in the gif on this page. Within this HTML file there are various elements that are related to one another. An element will have a parent element at the least, all connecting back to the root element of the HTML.</p>
+              <p>JavaScript is one of those languages that uses the DOM interface to manipulate HTML framework and uses its own methods to call specific aspects of the HTML. 
+              </p>
+              <p>Most pages on the web will have some ability for a user to interact with it. Whether that's a text box for a troll to provide unwanted insight to a comment thread, or a button that changes your browser to an obnoxious unicorn theme, these things will require knowledge of the DOM in order for JavaScript to target the appropriate parts of the web page when prompted.</p> 
+              <p>For example, lets pretend its the early 2000's and I'm wanting to customise my MySpace page by adding a button on my blog page that turns on a disco theme on the navigation bar and makes the buttons sparkle. We know the navigation bar is located in a div with the class "header", that has a child div containing a nav tag. Within this nav tag are the 4 anchor tags I've used for the navigation links to the different pages on this site.</p>
+              <img src="../images/navBarLocation.jpg" alt="image-highlighting-location-of-nav-bar-in-html-file">
+              <p>As I've used anchor tags in multiple places on my site I will be wanting to target those specific anchor tags, which fortunately have a class called "nav-a".</p>
+              <p>The JavaScript could locate those anchor tags with the class "nav-a" and have the effect applied to those anchor tags only, when the button is turned on.</p>
+              <img src="../images/shiny-nav.gif" alt="animated-gif-of-sparkly-nav-example">
+          </div> <!--blog question 3-->
+          <div class="blog-q"> <!--blog question 4-->
+            <div>
+              <h3>Explain the difference between accessing data from arrays and objects...</h3>
+              </div>
+              <p>Objects and arrays are two different ways of storing data. They are both able to store more than one value, and both able to store more than one type of data. For example, both objects and arrays can contain numbers, booleans, strings, or even other objects and arrays.</p>
+              <p>Both objects and arrays can be manipulated and are considered <em>mutable</em> because they can change their value once it's been set.</p>
+              <p>That said, they are accessed and altered differently due to the way they are laid out.</p>
+                <h4> 
+                  Objects 
+                </h4>
+               
+                <p>Objects are <em><strong>things</strong></em> that have specific characteristics, like people, cats and cars. Each of these <em>things</em> can have multiple properties like name, colour, location, favourite food. Each of those properties can have different data types as values. For example, the age property may use a number data type, but the name may use a string data type.
+                </p>
+                <img src="../images/cat2-object.jpg" alt="simplified-diagram-of-object">
+                <p>
+                These object properties are referred to as key value pairs, which means the property name e.g. <code>temperament</code> is referred to as the <em>key</em>; and this key has a string as its <em>value</em> e.g. <code>"calm"</code>. These key values can be manipulated in a number of ways to either, access, add, remove or alter them.</p>
+                <div class="img-ex">
+                <img src="../images/reassign-value-in-object.jpg" alt="code-block-to-show-how-to-reassign-value-of-an-objects-property">
+              <p>
+                  For example, if the cat referred to in the object "cat2", by some miracle, happens to make it to his 4th birthday I might want to update the age property. I can do this by reassigning the property key <code>age</code> to the value <code>4</code>. 
+              </p>
+            </div>
+              <p>By typing <code>cat2.age = 4</code> I am using the dot notation method to alter the property, where the object name is followed by a dot, and the property in question is listed after the dot, followed by the specified new value.</p>
+              <h4>Arrays</h4>
+              <p>Arrays are <em><strong>lists of data types</strong></em>, and like objects can also include more than one data type but for this example we will use one type.</p>
+              <p>If we look at the array <code>animals</code> below we can see it shows an array of objects. Each of these objects have an index position associated with where it is located within the array. The index begins at 0, so the third object in the array <code>rabbit1</code> would be at index number 2. This is important to note as this plays a key part when needing to call elements of the array at certain indices.</p>
+              <img src="../images/animal-array.jpg" alt="simplified-diagram-of-array">
+              <div class="img-ex">
+                <p>If we want to change the value of one of the data points in the array. Maybe we replace the object causing issues, <code>cat2</code>, with a new, less stressful object, <code>fish1</code>... we can use the following method... <code>animals['cat2'] = 'fish1'</code></p>
+                <img src="../images/reassign-element.jpg">
+              </div>
+              <p>This method uses bracket notation, whereby the array name, followed by a set of square brackets containing the element to change is followed by the new value to assign in its place. </p>
+
+          </div> <!--blog question 4-->
+          <div class="blog-q"> <!--blog question 5-->
+            <div>
+              <h3>Explain what functions are and why they are helpful...</h3>
+              </div>
+                <p> 
+                  When you've already explained how to execute a simple task to someone once there's nothing worse than having to repeat yourself over and over again, right? Functions can be thought of as a set of instructions that you give the computer in order to perform a certain task in a certain order. The wonderful thing about computers is that when they've been told something once they can remember it indefinitely, so you would just need to tell them to go do the thing, and they'd know exactly what that means. 
+              </p>
+              <p>
+                For example if you wanted to bake something you would need ingredients and a recipe. 
+              </p>
+              <img id="recipes" src="../images/ingredients-recipes.jpg" alt="code-block-with-array-of-ingredients-and-recipes">
+              <p>To define the function you would first need to tell the computer that the following set of code is a <strong>function</strong> by typing the word <code>function</code>, and then you'd need to give it a name like <code>bake</code></p>
+              <img src="../images/function-name.jpg" alt="simplified-diagram-of-naming-functions">
+              <p>
+                The next step is to specify any parameters that can be given. In this instance we would want the computer to look at the array of <strong>recipes</strong> and match the one that is specified when the function is called.
+              </p>
+              <img src="../images/function-parameters.jpg" alt="simplified-diagram-of-function-parameters">
+              <p>
+                The computer then needs to understand what steps to take in each of those recipes / parameters in order to successfully have 'baked'. These instructions go inside a set of curly brackets and can include various other JavaScript concepts like loops that we mentioned above.
+              </p>
+              <p>
+                Once the steps have been run the computer needs to know what to do with the end result of the function. In this instance we've asked the computer to return 'result'. 
+              </p>
+              <img src="../images/function-instructions.jpg" alt="simplified-diagram-of-function-instructions">
+              <p>
+                Then when you want to call the function with certain parameters in it you just need to type out the function name, followed by any parameters in the brackets, and the computer will return the result. 
+              </p>
+              <p>As we've used the <a href="#recipes">recipe array</a> as the specified parameter, the array of recipes will contain various recipe names that each have different ingredients required so the computer knows what to use to bake.</p>
+              <img src="../images/call-function.jpg" alt="simplified-diagram-of-calling-a-function">
+              <p>
+                A more complete example would be if we wanted the computer to run the bake function we created earlier with a specified recipe, the instructions in the function could run a conditional if else statement on the recipe we specified and the result would be based on the conditions of the if else statement. 
+              </p>
+              <div class="quote">
+              <img src="../images/if-statement.jpg" alt="simplified-diagram-of-if-else-statement-inside-a-function">
+              <h6>*full disclosure: I am well aware that making an ice cream sundae isn't technically "baking", but its too late to change the name of the function now...</h6>
+            </div>
+            <p>
+              We've asked the computer to check the recipe name, and if it's the cakeRecipe, we want the computer to return 'cake' to the console. We've then asked it to check various other recipes and send its output accordingly. If none of those recipes in the conditional statement match what was given in the parameters then the computer knows to return the statement 'we don't have that.'
+            </p>
+          </div> <!--blog question 5-->
+        </div> <!--blog-content-->
+      </div> <!--max-width-->
+    </div> <!--background-->
+  </body>
+  <footer>
+    <div><a href="#top">BACK TO TOP</a></div>
+    <div>© Sarah Lewis 2023</div>
+  </footer>
+</HTML>

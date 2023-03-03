@@ -1,0 +1,124 @@
+<html>
+  <head>
+    <title>HTML CSS</title>
+    <link href="../styles/main.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <h1 id="title">Sean's Blog about Dev Academy</h1>
+      <nav class="navbar">
+        <div class="container">
+          <div>
+            <ul>
+              <li>
+                <a href="../index.html">Home</a>
+              </li>
+              <li>
+                <a href="../about.html">About</a>
+              </li>
+              <li>
+                <a href="../contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="content">
+      <div class="container">
+        <div class="columns"></div>
+        <div class="columns">
+          <h2>Display Inline and Display inline blocks.</h2>
+          <p>
+            These are 2 separate ways of displaying elements using CSS.
+            <br />
+            <br />
+            <u>Display: inline</u> will allow you to put separate elements on
+            the same line, appearing as part of the same paragraph, on the same
+            line. It will ignore width and height, and padding will display over
+            the lines above and below. For example the below CSS produces the
+            text in example 1 on the right:
+            <br />
+            <br />
+            <img src="../img/Display Inline.png" alt="Display Inline" />
+            <br />
+            I’ve put in border style and color so we can see where the padding
+            ends. You can see that even though we’ve put in padding and width
+            tags, they are ignored. The dashed lines show the padding which acts
+            normally around the sides, but overlaps with the bottom and top
+            lines.
+            <br />
+            <br />
+            This tag should be used when an element needs to look like part of a
+            bigger paragraph or chunk of text. For example you could use it to
+            give embellishment to a link. Just be careful with the padding!
+          </p>
+          <p>
+            <u>Display: inline-block</u> Is similar but the height and width are
+            not ignored, so it treats the element as its own separate rectangle,
+            while it still keeping it on the same line. The below CSS produces
+            example two on the right:
+            <br />
+            <br />
+            <img src="../img/Display Inline.png" alt="Display Inline" />
+            <br />
+            Because the height and width are not ignored, and the padding is not
+            overlayed, this tag is more suited to creating specific buttons.
+            While being on the same line, they are more obviously a seperate
+            element.
+          </p>
+        </div>
+
+        <div class="columns">
+          <h2>Examples <br /></h2>
+          <ol>
+            <li>
+              Rhubarb rhubarb walla walla
+              <span class="inline">rhubarb rhubarb walla walla</span>
+              rhubarb rhubarb walla walla rhubarb rhubarb walla walla rhubarb
+              rhubarb walla walla rhubarb rhubarb walla walla rhubarb
+            </li>
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+
+            <li>
+              Rhubarb rhubarb walla walla
+              <span class="box">rhubarb rhubarb walla walla</span>
+              rhubarb rhubarb walla walla rhubarb rhubarb walla walla rhubarb
+              rhubarb walla walla rhubarb rhubarb walla walla rhubarb
+            </li>
+          </ol>
+
+          <p></p>
+          <div></div>
+          <p></p>
+        </div>
+        <div class="columns"></div>
+      </div>
+    </div>
+  </body>
+</html>

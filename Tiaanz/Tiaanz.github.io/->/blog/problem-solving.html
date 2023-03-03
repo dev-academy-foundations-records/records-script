@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <title>Problem-Solving</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <a href="../index.html"><img src="../images/logo.png" alt="logo"></a>
+            </div>
+            <div class="nav">
+                <a href="../index.html#blogs">Blog</a>
+                <a href="#footer">Contact</a>
+            </div>
+        </header>
+        <main class="main-blog">
+            <h1>Problem-Solving</h1>
+            <h3>1. A time I was blocked on a simple problem.</h3>
+            <p>
+                I was blocked on a simple problem when I was trying to add properties to an object with the
+                <code>ForEach()</code> loop.
+            </p>
+            <img src="../images/problem1.png" alt="problem1">
+            <p>This code did not result in an object gradebook with a property for each student in the students array.
+                Instead, it will only created a single property student in gradebook and assign an empty object {} to it
+                in each iteration of the loop.</p>
+            <p>As I knew there was another way to add object properties, which is
+                <code>objectName[‘propertyName’]</code>. I experimented with this approach and it worked.
+            </p>
+            <p>The problem is that student is a variable and its value is not being used to dynamically set the property
+                name in the gradebook object.</br>
+                This problem solving process was not that hard, but it helped me gain a deeper understanding of objects.
+            </p>
+            <h3>2. A time I elegantly solved a problem.</h3>
+            <p>
+                I got a problem as I was doing the <code>capitalization()</code> function. The problem was I was able to
+                get the
+                first letter of each word in upper case, but the rest part of the word disappeared.</br>
+                For example, I was
+                hoping to get ‘Hello World’ with the function capitalization( ‘hello world’), but turned out to be ‘H
+                W’. I could not come up with a solution so I just googled ‘how to get a sentence capitalized in
+                JavaScript?’, then I knew that a <code>slice()</code> method can be used to get the rest part of the
+                word and then
+                the “+” can be used to connect the capital letter with other letters. I was struggled for a while with
+                the problem but it did not take me too long to get it solved.
+            </p>
+            <h3>3. Reflect on how confident you feel using each of these problem-solving techniques/processes:</h3>
+            <ul>
+                <li><b>• Pseudocode</b>
+                    <p>This is a helpful technique, as it helps to analyze the logic for each functionality.
+                        By doing this, I will have an idea of what to do and just follow the steps to code instead of
+                        getting lost in the middle of coding. I am still getting used to using this technique.
+                    </p>
+                </li>
+                <li><b>• Trying something</b>
+                    <p>I am confident with this one, as I like to try out my ideas to see if it works.</p>
+                </li>
+                <li><b>• Rubber ducky method</b>
+                    <p>I sometimes use this one when I narrow down the problem to a small scope. This means I know where
+                        the problem is, so I would keep telling myself what the problem is and I need to find a solution
+                        to get the problem sorted. I like this technique, as it makes me focus on the core problem.
+                    </p>
+                </li>
+                <li><b>• Reading error messages</b>
+                    <p>I am confident with this one. Sometimes I could not understand the error message, I would copy it
+                        and paste it to Google, and it shows me how other people who have encountered the same issue get
+                        it sorted.
+                    </p>
+                </li>
+                <li><b>• Console.logging</b>
+                    <p>I like this one very much. Everytime I try out something, I will use <code>console.log()</code>
+                        to get the
+                        output and see if it works the way I want. Also, for a big block of code, I like to insert
+                        <code>console.log()</code> to each line of the code to check where the problematic line of code
+                        is.
+                    </p>
+                </li>
+                <li><b>• Googling</b>
+                    <p>I like this as well and I am very confident in finding solutions through Google search’s result.
+                        I normally find solutions through stack overflow, MDN documentation, and W3School.
+                    </p>
+                </li>
+                <li><b>• Asking your peers for help</b>
+                    <p>I would use this one if it takes me too long to find a solution.
+                    </p>
+                </li>
+                <li><b>• Asking coaches for help</b>
+                    <p>
+                        I have asked help from facilitators at bootcamp when I could not get the tests passed.
+                        It was because I did not return the value needed for testing in the function.
+                        Asking for help and getting the problem solved along with the facilitator increased my debugging
+                        skills.
+                    </p>
+                </li>
+                <li><b>• Improving your process with reflection</b>
+                    <p>I have not done much of this, but I will move onto this gradually.
+                    </p>
+                </li>
+            </ul>
+            <h3>4. Reflect on a time you were reluctant to ask for help. Consider what made you reluctant to do so.</h3>
+            <p>I was reluctant to ask for help at the beginning of dealing with the problem. I would like to give it a
+                go solving it by myself. But I would set a time for it and if it takes too long, I would go and ask for
+                help.</p>
+            <div class="page-nav">
+                <a href="../index.html#blogs">Main</a>
+                <a href="./javascript-dom.html"> &lt&lt Previous</a>
+                <a href="#">Next >></a>
+            </div>
+        </main>
+        <footer id="footer">
+            <span>Email: jwtian126@gmail.com</span>
+        </footer>
+    </div>
+</body>
+
+</html>

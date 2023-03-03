@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="main.css">
+    </head>
+
+    <body>
+        <h1>Tic-Tac-Toe</h1>        
+        <br>
+        <table>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+        <h2 id="subtitle">Click on a cell to start!</h2>
+        <button id="btn">New Game</button>
+        <section>
+          <div></div>
+          <div><p id="playerOne">Player 1 wins: 0</p></div>
+          <div><p id="stalemate">Stalemates: 0</p></div>
+          <div><p id="playerTwo">Player 2 wins: 0</p></div>
+          <div></div>
+        </section>
+        <audio id="audio" src="assets/447925__breviceps__writedraw-with-chalk-on-board.wav"></audio>
+        <audio id="audio-win" src="assets/391539__unlistenable__electro-win-sound.wav"></audio>
+        <audio id="audio-lose" src="assets/652328__imataco__lose-sound.wav"></audio>
+        <script src="game.js"></script>
+    </body>
+</html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Tech - JavaScript introduction</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap"
+      rel="stylesheet"
+    />
+    <link href="styles/main.css" rel="stylesheet" type="text/css" />
+  </head>
+  <header>
+    <div class="home">
+      <a href="index.html">Home</a>
+      <a href="Core.html">Core</a>
+      <a href="Tech.html">Tech</a>
+    </div>
+  </header>
+
+  <body>
+    <h1>JavaScript and The DOM</h1>
+
+<div id="body-container">
+
+    <p class="question">
+      An analogy to describe JavaScript and its relationship to HTML and CSS.
+    </p>
+    <p>
+      Since I used to be a nurse before entering this web development world,
+      allow me to explain how each of this languages work, comparing them to the
+      human body. Don’t worry... I’ll try not to go too far in my analogy.
+    </p>
+    <p>
+      So, imagine that HTML is like the structure of our body. It is formed of
+      many different bones and muscles to give us the structure of a human (with
+      head, spine, thorax, abdomen, limbs, etc.).
+    </p>
+    <p>
+      If you see it, you can identify it as a human, but it’s not particularly
+      pretty, neither will it be able to do much just like that.
+    </p>
+    <p>
+      Then comes CSS, it is like the fat tissue, skin and hair that will give
+      the generic structure, a personal appearance, in many different ways to
+      make it beautiful. But even with all that in place, a webpage won’t be
+      able to interact much.
+    </p>
+    <p>That changes with JavaScript!</p>
+    <p>
+      JavaScript is like the brain, that sends commands to different parts of
+      the body, giving them instructions of what to do. Bringing them to live!
+    </p>
+    <p>
+      “JavaScript is primarily used in the browser, enabling developers to
+      manipulate webpage content through the DOM, manipulate data with AJAX and
+      IndexedDB, draw graphics with canvas, interact with the device running the
+      browser through various APIs, and more. JavaScript is one of the world's
+      most commonly-used languages, owing to the recent growth and performance
+      improvement of APIs available in browsers.”
+      <a href="https://developer.mozilla.org/en-US/docs/Glossary/JavaScript">
+        (MDN Web Docs)</a
+      >
+    </p>
+
+    <p class="question">Explain control flow and loops</p>
+    <p class="question">Control Flow</p>
+    <p>
+      Control flow is the way computers follow instructions. Each document that
+      we write to build a webpage is a set of instructions for computers to
+      follow, like a recipe, and following them, it can display the webpage
+      (like the recipe's ready to eat).
+    </p>
+    <p>
+      A webpage's "recipe", the code, is writen in numbered lines, starting at
+      the top to the bottom of the page, increasing the number line after line.
+      The computer will follow the code in the sequence it is writen, top to
+      bottom.
+    </p>
+    <p class="question">Loops</p>
+    <p>
+      Loops are this wonderful little pieces of code that can save us a lot of
+      work. Imagine having to do a task over and over again, like turning on the
+      washing machine after each spin of the tub, until the load of laundry was
+      finnished. It is wonderderful that it can work on a kind of loop, spinning
+      and spinning until the time you have set for it to work is over.
+    </p>
+    <p>
+      With coding, loops are just as useful. We can ask the computer to repeat a
+      certain task for as many times we need, or until a certain condition has
+      changed, and it works even if we don't know how many times it will be
+      necessary. It is useful because, otherwise, we would have to repeat the
+      code again and again, for the number of times we need, and using a
+      ridiculously larger space in the document.
+    </p>
+    <p class="question">
+      Describe what the DOM is and an example of how you might interact with it.
+    </p>
+    <p>
+      The DOM (Document Object Model) is a
+      <a
+        href="https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction"
+        >'programming interface for web documents'</a
+      >. Every webpage is a document that can be seen (displayed), in a browser
+      or as the HTML source. In both cases it is the same document, but the DOM
+      representation allows it to be manipulated.
+    </p>
+    <p>
+      It treats each element in the HTML and CSS source file as an object, and
+      with a scripting language, like JavaScript, it can change the content that
+      is shown in the web page, or how it appears ( the style). The objects are
+      like 'folders' that classify different kinds of documents, this way you
+      can access all file of a certain kind, by using the DOM's interface for
+      accessing that kind of object, and it will list all files that fall in
+      that category.
+    </p>
+    <p class="question">
+      Explain the difference between accessing data from arrays and objects.
+    </p>
+    
+    <p>
+      According to Zac Heisey (<a href=” https://medium.com/@zac_heisey/objects-vs-arrays-42601ff79421#:~:text=Objects%20represent%20a%20special%20data,store%20a%20list%20of%20values.”> Medium.com</a>), 
+      objects represent a special data type that can be changed and used to store a collection of data (rather than just a single value), 
+      and arrays are also a special type of variable that is mutable and can also be used to store a list of values.
+      What is the difference then, and how do we know when to use which, and how to do work with each of them? 
+    </p>
+    <p>
+    <b>Objects</b> are used to represent a ‘thing’ in your code. That ‘thing’ can be anything that is made up or that can be defined by a set of characteristics. When we are working with objects, those characteristics are called properties, and they have a key and a value.
+    </p>
+    <p>
+    <b>Arrays</b> are used when we want to make a list of multiple items in the same variable. Preferably when it is an ordered collection where the items can be accessed by their numerical position in the list (array). The first item of an array will always have the index of zero [0], the second will be [1], and so on.
+    </p>
+    <p>
+        Object properties can store values of any primitive data type, an array or even another object. Similarly, arrays can consist of strings, numbers, Booleans, objects, or even other arrays.
+    </p>
+    <p>
+       We can use dot or bracket notation to access, add, change, and remove items from an object; while zero-based indexing and a variety of built-in methods let us access and alter items in an array. We can  also iterate over object properties and array items using various loops (e.g. for, for…in, for…of, forEach()).
+    </p>
+            
+    <p class="question">Explain what functions are and why they are helpful</p>
+    <p>
+        <b>Functions</b> are one of the fundametal building blocks in JavaScript. 
+        It is a set of statements that perform a task or calculates a value, similarly to a 
+        procedure, but for a procedure to be considered a function, it needs to take an input
+         and return an output that has an obvious connection with the input. Also , you can't just
+         write your function anywhere. For it to work, you need to define it somewhere within the scope
+         from wich you want to call it. 
+         <br>
+         They are incredibly useful to define a behaviour, execute a command, evaluate
+         a certain piece of data, make operations and much more. But the best part is that once you
+         define your function, you can call it as many times as you want, using different arguments, and 
+         this way, producing different results, without having to write a new function for the new 
+         arguments.
+    </p>
+
+    <p>
+      <a href="index.html">Home</a>
+    </p>
+
+</div>
+  </body>
+  <footer>
+    <span>&copy;</span>Caroline Stadnicki 2023 / This blog was created as part
+    of DevAcademy foundations curriculum.
+  </footer>
+</html>

@@ -1,0 +1,127 @@
+ 
+  @media (max-height: 800px) {p{ 
+    font-size:10px;
+   }}
+  
+   @media only screen 
+   and (min-device-width: 320px) 
+   and (max-device-width: 480px)
+   and (-webkit-min-device-pixel-ratio: 2) {
+ 
+ }
+
+ @media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1200px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+}
+
+@media only screen 
+  and (min-device-width: 1200px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+  }
+
+  a:link { text-decoration: none; }
+a:visited { text-decoration: none; }
+a:hover { text-decoration: none; }
+a:active { text-decoration: none; }
+
+  body {
+    text-align:center;
+    background-color:white
+ 
+  }
+
+  .header{
+    text-align:center;
+  }
+
+  .navigation{
+    background-color: black;
+    color:white;
+    width: 100%;
+    text-align: center;
+    border: 3px solid black 
+    
+  }
+  
+  .nav {
+    color:white
+  }
+  
+
+  .heading {
+    font-size: 50px;
+    margin:0;
+    background:black;
+    color:white;
+    margin:0;
+  border: 3px solid rgb(5, 5, 5);
+  padding-block: 4rem;  
+  text-align:center;
+  }
+
+  .question {
+    font-size:28px;
+    padding:10px 50px 10px 50px;
+
+  }
+
+  .para {
+    padding:10px 40px 10px 60px;
+    font-size:30px;
+  }
+  .button {
+    font-size: 1em;
+    font-weight: bold;
+    background:rgb(177, 172, 172);
+    margin-left:2rm;
+
+   
+  }
+  
+ 
+
+  .responsive-pics {
+    margin:min(90%,10px);
+    max-width:50%;
+    height:auto;
+    padding:200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin:auto;
+  }
+
+  .code {
+    font-family:monospace;
+    font-size: 2em;
+  }
+
+  .container {
+    padding: 100px
+  }
+  
+
+
+  .block {
+    display:inline;
+    padding:10px;
+    font-size: 50px;
+    margin:20px;
+    border:3px solid black;
+    height:1000px;
+    width:1000px;
+    }
+
+  .block1 {
+    display:inline-block;
+    padding:25px;
+    font-size: 20px;
+    margin:20px;
+    border:3px solid black;
+    height:10px;
+    width:10px;
+    }

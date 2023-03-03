@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Javascript Methods</title>
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicons -->
+    <link rel="icon" href="../assets/img/light-logo.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bellota+Text&family=Dosis:wght@300;400;500&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS Files Link -->
+    <link rel="stylesheet" href="../assets/vendor/aos/aos.css">
+    <link rel="stylesheet" href="../assets/vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/vendor/bootstrap-icons/bootstrap-icons.css">
+    <link rel="stylesheet" href="../assets/vendor/swiper/swiper-bundle.min.css">
+
+    <!-- Main CSS File link -->
+    <link rel="stylesheet" href="../assets/css/main.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-light custom-navbar">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">Sean's Blog</a>
+            <a href="#" class="burger" data-bs-toggle="collapse" data-bs-target="#main-navbar">
+                <span></span>
+            </a>
+        </div>
+    </nav>
+
+    <div class="collapse navbar-collapse custom-navmenu" id="main-navbar">
+        <div class="container py-2 py-md-5">
+            <div class="row align-items-start">
+                <ul class="custom-menu">
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li><a href="profile.html">Profile</a></li>
+                    <li><a href="tech.html">Tech</a></li>
+                    <li><a href="core.html">Core</a></li>
+                    <li>Foundation &raquo;
+                        <ul class="custom-submenu">
+                            <li>Sprint 1 &raquo;&raquo;
+                                <ul class="custom-submenu">
+                                    <li><a href="te-houtaewa-template.html">Te Houtaewa</a></li>
+                                </ul>
+                            </li>
+                            <li>Sprint 2 &raquo;&raquo;
+                                <ul class="custom-submenu">
+                                    <li><a href="html-css.html">HTML/CSS</a></li>
+                                    <li><a href="identity-values.html">Identity/Values</a></li>
+                                    <li><a href="learning-plan.html">Learning Plan</a></li>
+                                </ul>
+                            </li>
+                            <li>Sprint 3 &raquo;&raquo;
+                                <ul class="custom-submenu">
+                                    <li><a href="js-dom.html">JS-DOM</a></li>
+                                    <li><a href="emotional-intelligence.html">Emotional Intelligence</a></li>
+                                </ul>
+                            </li>
+                            <li>Sprint 4 &raquo;&raquo;
+                                <ul class="custom-submenu">
+                                    <li><a href="neuroplasticity.html">Neuroplasticity</a></li>
+                                    <li><a href="problem-solving.html">Problem Solving</a></li>
+                                </ul>
+                            </li>
+                            <li>Sprint 5 &raquo;&raquo;</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- Navigation Bar -->
+
+    <!-- Blog Header Image -->
+    <header class="blog-header-image tech-1">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-12 text-center">
+                    <h1 class="fw-bolder">Javascript Methods List</h1>
+                    <p class="lead"></p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Blog Header Image -->
+
+    <!-- Contents List -->
+    <section class="content-list container-fluid">
+        <div class="row">
+            <h2>Javascript Methods - Basic built-in objects</h2>
+            <h3>1) Object object</h3>
+            <p>
+                Top-level object of javascript <br>
+                Construct <br>
+                <br>
+                var object={}; <br>
+                var object=new Object(); <br>
+                <br>
+                <b>- Methods of the Object object</b>
+                <br><br>
+                constructor() : Represents the object's constructor function. <br>
+                hasOwnProperty(name) : checks whether an object has a name property <br>
+                isPrototypeof(object): Checks whether an object is the prototype of object. <br>
+                propertyIsEnumerable(name) : Check whether enumerable with loop statement <br>
+                toLocaleString() : Converts an object to a string in the language appropriate to the host environment.
+                <br>
+                toString() : convert object to string <br>
+                valueOf() : display the value of an object <br>
+            </p>
+            <h3>2) Number object</h3>
+            <p>
+                Objects used to represent numbers <br>
+                Produce <br>
+                <br>
+                var num = 1; <br>
+                var num = new Number(1);<br>
+                <br>
+                <b>- Methods of the Number object</b>
+                <br><br>
+                toExponential() : Returns a string representing a number in exponential notation // Number of
+                significant digits <br>
+                toFixed() : Returns a string representing a number in fixed decimal notation // number of decimal places
+                <br>
+                toPrecision() : Returns a string representing a number in exponential or fixed-point representation
+                depending on its length. <br>
+                <br>
+                <b>- Properties of the Number constructor function</b>
+                <br><br>
+                MAX_VALUE: The maximum number that can be expressed in JavaScript <br>
+                MIN_VALUE: The minimum number that can be expressed in JavaScript <br>
+                NaN: Not a Number <br>
+                POSITIVE_INFINITY : positive infinity number <br>
+                NEGATIVE_INFINITY : negative infinity number <br>
+            </p>
+            <h3>3) String object</h3>
+            <p>
+                An object used to represent a string <br>
+                <br>
+                <b>- Properties of the String object</b>
+                <br><br>
+                length: Displays the length of the string <br>
+                <br>
+                <b>- Methods of the String object</b>
+                <br><br>
+                charAt(position) : return the character at that index <br>
+                charCodeAt(position) : Returns the corresponding index character as Unicode <br>
+                concat(args): concatenates strings entered as parameters <br>
+                indexOf(searchString, position): returns the index of the matching string starting from the beginning
+                <br>
+                lastIndexOf(searchString, position) : returns the index of the matching string starting from the back
+                <br>
+                match(regExp) : check if regExp exists in string <br>
+                replace(regExp, replacement) : Replace regExp in string with replacement and return <br>
+                search(regExp): Returns the location of a string matching regExp <br>
+                slice(start, end): returns a string at a specific position <br>
+                split(separator, limit): Returns an array after cutting the string with separator <br>
+                substr(start, count) : Cuts the string from start to count and returns it <br>
+                substring(start, end): cuts the string from start to end and returns it <br>
+                toLowerCase() : Converts a string to lower case and returns it. <br>
+                toUpperCase() : Converts a string to uppercase and returns it. <br>
+                <br>
+                <b>- HTML-related methods of the String object</b>
+                <br><br>
+                anchor() : add a tag to string <br>
+                big() : add big tag <br>
+                blink() : add blink tag <br>
+                bold() : add b tag <br>
+                fixed() : add tt tag <br>
+                fontcolor(colorString) : add font tag and color attribute <br>
+                fontsize(fontSize) : add font tag and size attribute <br>
+                italics() : add i tag <br>
+                link(linkRef) : add a tag and href attribute <br>
+                small() : add small tag <br>
+                strike() : add strike tag <br>
+                sub() : add sub tag <br>
+                sup() : add sup tag <br>
+                <br>
+                Method chaining is possible because String objects return the contents of the string without altering
+                it.
+            </p>
+            <h3>4) Array object</h3>
+            <p>
+                An object used to represent an array <br>
+                Produce <br>
+                <br>
+                var array=[value1, value2...]; // initialization upon creation <br>
+                var array=new Array(); // just create an array <br>
+                var array=new Array(array size); // create space at the same time as creation <br>
+                var array=new Array(value1, value2); // initialization upon creation <br>
+                <br>
+                <b> - Properties of Array object</b>
+                <br><br>
+                length: returns the size of the array <br>
+                <br>
+                <b>- Methods of the Array constructor function</b>
+                <br><br>
+                Array.isArray() : check if it is an array <br>
+                <br>
+                <b>- Array object methods</b>
+                <br><br>
+                <i><u>Methods that change properties</u></i>
+                <br>
+                pop() : Removes the last element of an array and returns it. <br>
+                push() : Adds a new element to the end of an array <br>
+                reverse() : reverse the order of elements in an array <br>
+                sort() : Sort array elements // default string ascending order <br>
+                <i>&nbsp; *Sort in descending order: array.sort((a,b)=>{return b-a});</i><br>
+                <i>&nbsp; *Shuffle: arr.sort(()=>{return 0.5-Math.random()});</i><br>
+                splice() : Removes the specified part of an element and returns the deleted element<br>
+                <br>
+                <i><u>Methods that don't change properties</u></i>
+                <br>
+                slice() : Returns a specified portion of an element <br>
+                concat(): Creates an array by combining all the elements of the array entered as parameters and returns
+                it <br>
+                join() : Returns after converting all elements in the array to a string <br>
+                indexOf() : Search the position of a specific element from the beginning of the array <br>
+                lastIndexOf(): Search the position of a specific element from the back of the array <br>
+                <br>
+                <i><u>Iteration method</u></i>
+                <br>
+                forEach() : Arrays can be used like a for in loop<br>
+                map() : Creates a new array by applying certain rules to an existing array. <br>
+                <br>
+                <i><u>Conditional method</u></i>
+                <br>
+                filter() : Creates a new array by extracting elements that satisfy certain conditions <br>
+                every() : Checks if an element of an array satisfies a condition <br>
+                some() : Checks if the elements of an array satisfy at least one condition <br>
+                <br>
+                <i><u>Operation method</u></i>
+                <br>
+                reduce() : Executes a function that groups the elements of the array by two from the left until there
+                are only one element in the array. <br>
+                reduceRight() : same as above, but run from the right <br>
+                Array.//prototype//.remove =function (i) { this.splice(i, 1); } //
+                Add remove function to prototype <br>
+                arr.remove(i); // remove that index value
+            </p>
+            <h3>5) Date object</h3>
+            <p>
+                An object that displays the date and time <br>
+                Produce <br>
+                <br>
+                var date = new Date(); // If no parameters are entered, reset to the current time <br>
+                <br>
+                <b>Parameter example</b>
+                <br>
+                String: new Date('December 11, 2018'); <br>
+                Numbers: new Date(2018, 12, 11, 2, 24, 23); // year, month-1, day, hour, minute, second, millisecond
+                order <br>
+                Unix time: new Date(1351511); // elapsed time in milliseconds since 12:00 midnight on January 1,
+                1970 <br>
+                <br>
+                <b>Methods of the Date object</b>
+                <br>
+                getTime() : Returns Unix time, used to calculate date interval <br>
+                *There are a lot of methods, but most of them consist of get and set, and the function can be
+                inferred by the method name. <br>
+                *The getYear() method returns different results depending on the browser, so use getFullYear() <br>
+            </p>
+            <h3>6) Math object</h3>
+            <p>
+                Objects with properties and methods related to mathematics <br> 
+                The Math object is used as a variable // Math.property, not a function <br>
+                It is the only built-in object that does not use a constructor <br>
+                <br>
+                <b>- Methods of the Math object</b>
+                <br>
+                abs() : returns absolute value <br>
+                acos() : Returns the arc cosine value <br>
+                asin() : Returns the arc sine value <br>
+                atan() : Returns the arc tangent value <br>
+                atan2(y, x) : Returns the arc tangent of the ratio of x and y <br>
+                ceil() : Returns the smallest integer greater than or equal to <br>
+                cos() : returns the cosine value <br>
+                exp() : Returns the square of the natural logarithm <br>
+                floor() : Returns the largest integer less than or equal to <br>
+                log() : return log value <br>
+                max() : returns the largest value among parameters <br>
+                min() : Returns the smallest value among parameters <br>
+                pow(x, y) : returns x raised to the power of y <br>
+                random() : Returns a random number from 0 to 1 <br>
+                round(): rounds up and returns <br>
+                sin() : returns the sine value <br>
+                sqrt() : Returns the square root <br>
+                tan() : Returns the tangent value <br>
+            </p>
+            <h3>7) JSON (Javascript Object Notation) object</h3>
+            <p>
+                A string in the form of a JavaScript object <br>
+                Methods of the JSON object <br>
+                <br>
+                JSON.stringify() : Convert a JavaScript object to a JSON string <br>
+                * You can check the entire object property as a string rather than an object, etc. <br>
+                <br>
+                JSON.parse() : Convert JSON string to JavaScript object <br>
+                toJSON: function() {return object}; : If there is a toJSON method in the object, only the return value
+                of that method is returned; otherwise, all keys and properties are returned. <br>
+            </p>
+            <h2>Useful References</h2>
+            <p>
+                <a href="https://www.tutorialspoint.com/javascript/javascript_builtin_functions.htm">
+                    Tutorials Point - JavaScript Built-in Functions
+                </a>
+            </p>
+            <p>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">
+                    MDN - Javascript
+                </a>
+            </p>
+        </div>
+    </section>
+    <!-- Contents List -->
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <p class="footer-title"> Copyright Sean. All Rights Reserved</p>
+                <p class="footer-text"></p>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer -->
+
+    <!-- Vendor JS files -->
+    <script src="../assets/vendor/aos/aos.js"></script>
+    <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UFT-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/../styles/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merienda&display=swap" rel="stylesheet">
+    <title>My Learning Journey</title>
+    </head>
+  <body>
+
+ <!--Navigation bar which will be the same on every page except we need to add ids so we can see what page we are on-->
+ <div class="navigation" class="flex">
+
+  <div class="button"><a href="/../index.html">Home</a></div>
+    <div class="button"><a href="/blog/blog_index/blog_index.html">Blog</a></div>
+    <div class="button"><a href="/../games_page/games.html">Games</a></div>
+    <div class="button"><a href="/../side_projects_page/side_projects.html">Side Projects</a></div>
+    </div>
+
+    <h1 class="title_heading">
+      Tech - Static, Relative, Absolute and Fixed Positioning
+    </h1>
+
+    <div class="content">
+
+<div class="static_info">
+
+  <h2 class="subheading">Static Positioning</h2>
+  
+  
+    <p class="green_text">"Ogers are like onions... "</p>
+    <p>
+    and so is static postioning! 
+    <br>
+"Why?" I hear you ask... because they all have layers!
+<br>
+.... yes.... cakes have layers too.
+<br>
+<br>
+Static positioning is simply layers on a website that start from top to bottom. If you put a red layer at the top, nothing else goes into that layer. If you add another layer, it will automatically go underneath the red layer. This all works together to make a very tasty looking webpage... if you like layers ;p
+<br>
+<br>
+Here is an example of static layers. See the beautiful layered rainbow?
+<ul class="rainbow">
+  <li class="red_bg">Red</li>
+  <li class="orange_bg">Orange</li>
+  <li class="yellow_bg">Yellow</li>
+  <li class="green_bg">Green</li>
+  <li class="blue_bg">Blue</li>
+  <li class="indigo_bg">Indigo</li>
+  <li class="violet_bg">Violet</li>
+</ul>
+
+<iframe class="video" height="315" src="https://www.youtube.com/embed/-FtCTW2rVFM?start=44&end=120" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> 
+
+    <br>
+  </p>  
+
+</div>
+
+<div>
+<h2 class="heading">Relative Positioning</h2>
+<p>
+Now that I'm on the theme of Shrek, I'm just going to roll with it. Let's look at relative positioning. Below we can see a picture of Shrek.
+<br>
+<br>
+<img id="shrek_img" src="/blog/Positioning_Post/Shrek.png">
+<br>
+<br>
+Now if I add images of both Shrek and Fiona... This happens.
+<img id="shrek_img" src="/blog/Positioning_Post/Shrek.png">
+<img id="fiona_img" src="/blog/Positioning_Post/Fiona.png">
+
+<br>
+<br>
+See? Layers! That's because static positioning is the default. I can change Fiona's location to be relative to Shrek by using... you guessed it... relative positioning!
+<br>
+<br>
+<div class="clear">
+<img id="shrek_img_relative" src="/blog/Positioning_Post/Shrek.png">
+<img id="fiona_img_relative" src="/blog/Positioning_Post/Fiona.png">
+</div>
+<br>
+<br>
+<img id="relative_code_img" src="/blog/Positioning_Post/carbon.png">
+<br>
+<br>
+
+
+</p>
+
+<h2 class="heading">Absolute Positioning</h2>
+<p> This one, had me seriously confused. Everytime I used absolute, it would just do the same as relative. I found an image on  <a target="_blank" href="https://www.w3schools.com/css/css_positioning.asp">W3School</a> (which is great if you haven't checked it out yet). It shows that an absolute element must have a parent element otherwise it will use the body or HTML as a parent. I tried putting my absolute element uder div parents but it still didn't work. 
+  <br>
+  <br>
+  Finally, I realised that W3School also included the parent whose position was relative. 
+  <br>
+  <br>
+  <a target="_blank" href="https://www.w3schools.com/css/css_positioning.asp"><img id="W3S_img" src="/blog/Positioning_Post/Absolute_Positioning_Example.png"></a>
+  <br>
+  Now this analogy is a bit of a stretch but bare with me. Imagine a small clingy child who always wants to hold the hand of their parent. If the parent all of a sudden vanishes, the small child, helpless, seeks another hand to hold. (Remember this is an analogy only). This means if there is no parent element, the 'child' element will find the next closest thing.
+  <br>
+  <br>
+  An issue occurs though if the adult themselves is lost. If they do not know their own position relative to the world (or in this case our DOM), they can't look after their child and the child will seek another 'parent'.
+<br>
+<br>
+  I hope this analogy wasn't too traumatic for anyone.
+
+  <br>
+  <br>
+
+
+</p>
+
+
+</div>
+<div>
+
+
+<h2 class="heading">Fixed Positioning</h2>
+<p>
+Imagine you have a sticky note stuck to your screen. If you scroll with your mouse, does it move? No.
+<br>
+<br>
+An image or other element such as a navigaion bar can have fixed postitioning. This means that even if you scroll, it will stay in the same place. The position of the element is based on your window and will stay in the same spot in your window. 
+<br>
+<br>
+See donkey to the side by the scroll bar? He is an example of a fixed element.
+<br>
+<br>
+<img src="donkey.png" id="donkey_image">
+
+  
+</p>
+</div>
+
+</div>

@@ -1,0 +1,17 @@
+  // -    -   -   -   -  //
+ // JAVASCRIPT CARNIVAL //
+// -    -   -   -   -  //
+
+console.log("Whack-a-Mole!")
+
+//get the cells array
+const cells = document.querySelectorAll('td')
+
+//Randomise which cell pops the mole
+function molePops() {
+  const mole = Math.floor(Math.random() * cells.length);
+  // return cells[mole];
+  mole
+}
+
+console.log(molePops());

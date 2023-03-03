@@ -1,18 +1,17 @@
 #!/bin/sh
 # This is a comment!
 
-
 # change these variables :)
-students=("github-username")
-cohort="COHORT-YEAR"
+students=("zzzzzzzzzzzzzzzzzzzzl" "dionatan-narciso" "KemaxLong" "Tiaanz" "min-suh" "pulsarbeam" "kason-cheong" "Kurt-Leong" "caroline-stadnicki" "Sue-Raisianzadeh" "milo-palmer" "damir-kurtovic" "Ilse-Swanepoel" "phattharanit-pewklieng" "sticklandsm" "ian-jl-chua" "Robert-Haluza" "sarah-lewis-1808" "yoho4613" "lualin" "Dethorasis" "Timothy-itayi" "maycon-assis" "jpjh1001" "theangelazhang" "sparrow-peppermint")
+cohort="HARAKEKE-2023"
 
 # create your own access token (with repo permissions)
 # https://github.com/settings/tokens/new?scopes=repo&description=Foundations%20records%20script
-my_access_token="asecret"
+my_access_token="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"
 
 # change these at your own risk ;)
 # (aka pls don't)
-remote="git@github.com:dev-academy-foundations-records"
+remote="git@github.com:eda-foundations-records"
 out="$(pwd)/records-output-$cohort.txt"
 
 function get_records {
@@ -57,7 +56,7 @@ function get_records {
 function create_records_repo {
     new_repo_data='{"name":"'"$cohort"'", "private": true}'
 
-    ( curl -H "Authorization: token $my_access_token" -X POST --data "$new_repo_data" https://api.github.com/orgs/dev-academy-foundations-records/repos > /dev/null ) && ( echo "\n\nCreated repo $cohort\n" )
+    ( curl -H "Authorization: token $my_access_token" -X POST --data "$new_repo_data" https://api.github.com/orgs/eda-foundations-records/repos > /dev/null ) && ( echo "\n\nCreated repo $cohort\n" )
 }
 
 function copy_repo {

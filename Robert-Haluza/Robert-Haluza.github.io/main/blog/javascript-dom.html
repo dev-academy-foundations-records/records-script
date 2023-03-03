@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Rob's Blog</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="/styles/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head> 
+  <body>
+    <header id="main-header">
+      <nav>
+       <a href="/index.html"> 
+        <h1>Rob's Stuff</h1>
+       </a>  
+        <div id="menu">
+          <a href="/blog/blog-home.html">Blogs.</a>
+          <a href="/code collection/code-collection.html">Code-Collection.</a>
+          <a href="/about/about.html">About.</a>
+        </div>
+      </nav>
+    </header>
+    <section id="main-body">
+      <div class="container">
+        <h2>JavaScript Fundamentals</h2>
+        <div class="container">
+          <h1>An analogy to describe JavaScript and its relationship to HTML and CSS:</h1>
+          <p>JavaScript can be thought of as the brain of a website, HTML as the bone structure and CSS as the skin.</p>
+        </div>
+        <div class="container">
+          <h1>Explain control flow and loops using an example process from everyday life:</h1>
+          <p>Control flow refers to the order in which a computer program or algorithm executes different instructions or operations. Loops are a type of control flow statement that allow the program to repeat a certain block of code multiple times. <br>
+            An example of control flow and loops in everyday life is making a sandwich. The process of making a sandwich can be thought of as a set of instructions or operations. The control flow of the process would be the order in which the instructions are executed.
+            A loop in this process would be if you wanted to make multiple sandwiches, you would repeat the instructions for making the sandwich several times.
+          </p>
+        </div>
+        <div class="container">
+          <h1>Describe what the DOM is and an example of how you might interact with it:</h1>
+          <p>The Document Object Model (DOM) is a programming interface for HTML and XML documents. It represents the structure of a document as a tree-like hierarchy of objects and allows a program to access and manipulate the contents of a webpage. Each element in an HTML or XML document is represented as an object in the DOM, and the properties and methods of these objects can be accessed and modified using JavaScript.<br>
+            An example of interacting with the DOM would be using JavaScript to change the text of a button on a webpage.<br>
+            <br>
+            var button = document.getElementById("myButton");<br>
+              button.addEventListener("click", function() { <br>
+              button.innerHTML = "Click me!";<br>
+            });<br>
+            <br>
+            In this example, the DOM is being used to access the button element on the webpage by its id using the getElementById method. The innerHTML property of the button object is then being modified to change the text displayed on the button. The addEventListener method is used to attach an event listener to the button that triggers the change in text when the button is clicked.
+          </p>
+        </div>
+        <div class="container">
+          <h1>Explain the difference between accessing data from arrays and objects:</h1>
+          <p>In JavaScript, arrays and objects are both used to store and organize data, but they have different characteristics and ways of accessing the data. <br>
+            An array is a collection of ordered values that are accessed by an index number. The index numbers start at 0, so the first item in the array has an index of 0, the second item has an index of 1, and so on. You can access an item in an array by using its index number in square brackets, like this:<br>
+           <br>
+            let myArray = [1, 2, 3, 4, 5];<br>
+            let secondItem = myArray[1]; // 2<br>
+          <br>
+            An object is a collection of key-value pairs. Instead of using index numbers, you can access the values in an object using the keys. Keys can be any string and the values can be any data type. You can access the property of object using dot notation or bracket notation like this:<br>
+            <br>
+            let myObject = {name: "Rob", age: 25, job: "Developer"};<br>
+            console.log(myObject.name) // Rob<br>
+            console.log(myObject["age"]) // 25<br>
+            <br>
+            In summary, arrays are ordered collections of values that are accessed by index, while objects are collections of key-value pairs that are accessed by key. Arrays use numerical indexes to access values, while objects use keys, which can be any string.
+          </p>
+        </div>
+        <div class="container">
+          <h1>Explain what functions are and why they are helpful:</h1>
+          <p>In programming, a function is a block of code that can be reused multiple times throughout a program. Functions are used to perform specific tasks and can be called (or invoked) by other parts of the code. Functions are helpful because they allow for code to be organized and modularized, making it easier to read, understand and maintain.<br>
+              Functions have inputs, called parameters, and can also output a value. It means that you can pass information to the function and receive information from the function. This is useful because you can write a function once, but use it many times with different inputs, making the code more efficient and maintainable.
+              For example, you might have a function that calculates the average of a set of numbers, you could call this function multiple times with different sets of numbers and it would return the average each time. This eliminates the need to rewrite the same calculation multiple times in the code..</p>
+        </div>
+      </div>
+      </section>
+        
+      <footer id="main-footer">
+        <p>Copyright &copy; 2023 Rob's Stuff</p>
+    
+    </footer>
+      </body>
+    </html>
+        
