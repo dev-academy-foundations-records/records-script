@@ -1,1 +1,0 @@
-# damir-kurtovic.github.io
