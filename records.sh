@@ -12,7 +12,7 @@ my_access_token="asecret"
 
 # change these at your own risk ;)
 # (aka pls don't)
-remote="git@github.com:eda-foundations-records"
+remote="git@github.com:dev-academy-foundations-records"
 out="$(pwd)/records-output-$cohort.txt"
 
 function get_records {
@@ -31,7 +31,7 @@ function get_records {
         echo "\n------ $name ------" && log "\n------ $name ------"
         cd $name 
 
-        repos=("$name.github.io" "reflections" "DOM-interactions" "minesweeper" "javascript-carnival" "calculator")
+        repos=("$name.github.io" "reflections" "DOM-interactions" "DOM-applying-classes" "javascript-intro" "javascript-methods" "javascript-kata" "javascript-cafe" "tic-tac-toe" "javascript-carnival" "calculator" "minesweeper")
 
         for repo in "${repos[@]}"; do
             copy_repo $repo
@@ -57,7 +57,7 @@ function get_records {
 function create_records_repo {
     new_repo_data='{"name":"'"$cohort"'", "private": true}'
 
-    ( curl -H "Authorization: token $my_access_token" -X POST --data "$new_repo_data" https://api.github.com/orgs/eda-foundations-records/repos > /dev/null ) && ( echo "\n\nCreated repo $cohort\n" )
+    ( curl -H "Authorization: token $my_access_token" -X POST --data "$new_repo_data" https://api.github.com/orgs/dev-academy-foundations-records/repos > /dev/null ) && ( echo "\n\nCreated repo $cohort\n" )
 }
 
 function copy_repo {
