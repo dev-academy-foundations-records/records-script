@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"name": "DOM-interactions",
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "javascript-cafe"
+	}
+}

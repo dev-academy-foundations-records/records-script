@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Javascript Dom </title>
+    <meta charset="UTF-8">
+    <link href="../main.css" rel="stylesheet" type="text/css">
+  </head>
+  
+  <body><!--background="beach.jpg"> -->
+    <div class="topnav">
+      <a class="active" href="../index.html">Home</a>
+      <a href="sprint-menu.html">Sprint Menu</a>
+    </div>
+    <hr>
+    
+    <h1> Sprint 3 Tech - Javascript fundamentals </h1>
+    
+    <h3>08 February 2023</h3>
+    
+    <p>
+      JavaScript - JS is an object-orientated programming language, primarly used to add functionality to webpages.</p>
+      <br>
+      <p>
+        <img src="url-guide.jpg">
+      </p>
+      <h2>Short explanation of this blog</h2>
+      <p><!--As if talking to a Non-technical friend, discuss:
+
+        Non-technical could mean writing this as if it was 
+        a blog post you would have wanted to read when you first started learning these concepts or 
+        to a friend who wants a better understanding of what you are learning. 
+        You should show examples of code and screenshots to help teach others! -->
+        
+      A blog is a kind of website, a personal viewpoint, commentary, regularly updated. 
+      The term 'blog' is the short for 'logging the web'. 
+      This blog is about my programming studies. It is my personal journal or log.
+      Now let's explore what are a website and a webpage.</p>
+        <p>A webpage is a document that we usually view in an internet browser. 
+          It provides us with information and entertainment.
+          It may include text, pictures, images, sounds, videos and links to other webpages.
+          A website is a group of several webpages linked together.
+        </p>
+      <br>
+      <p>
+        <img src="web-languages.jpg">
+      </p>
+      <h2>An analogy describing JS, HTML and CSS</h2>
+      <p>Websites are written in several programming languages. The most important one is HTML. </p>
+        <p>Other important ones are CSS and JS. Other languages commonly used are Java, Phyton, PHP, SQL, .NET, etc.</p>
+        <p>Let's focus on HTML, CSS and JS. An analogy for them could be a house or an appartment. </p><p>HTML is like a 
+        frame, a structure that
+      holds everything together. It lays out what is where on a page. </p><p>CSS is like the interior design. Each room in a house could have
+    its unique colours, size, elements(furniture). CSS provides background colours, font styles and size, etc.,
+    making the webpage attracive and easy to use. </p><p>JS could be compared to the appliances in the house. Each room/webpage 
+  has its own functionality. Appliances are interactive, for example we use an oven and stove to cook food. We could use a heater to warm a room.
+   Similarly JS allows users to interact with a page, to fill forms, to validate input.
+  </p>
+  <br>
+  
+      <h2>Control flow and loops explanation</h2>
+   <!--   <h2>Explain control flow and loops using an example process from everyday life</h2> -->
+      <p>Control flow is the order in which the instructions in a program are executed. Normally in JS, 
+        code is executed line by line, top to bottom, in a linear fashion. There are three types of a flow:</p>
+      <p>1) Sequential - the one just described above, the default flow.</p>
+      <p>2) Branching /Conditional flow -when code does different actions based on different conditions.</p>
+      <p>3) Repetitive flow -loops are examples for this, 'for loop' executes until a condition is true. 
+        Other loops run until they run out of a condition to loop over. 
+      </p><p>Control flow could be compared to a meal preparation. Let's say we are baking a cake. 
+        Firstly we need to have all the necessary ingredients like sugar, flour, eggs, chocolate, nuts, etc. 
+        Secondly, we need to do things in sequential order, like mix sugar and eggs, add flour, add chocolate , and bake. </p>
+        <p>Deviating from this would be disastrous, resulting in wasted ingredients and time. 
+        Like mixing sugar and chocolate, baking it in an oven, then adding flour. Total disaster.</p>
+        <p>JS loops could be also compared to cooking. Let's say we are making pancakes. 
+        We made the bater, now it's time to fry pancakes. 
+        So we repeatedly (loop) fry, one pancake, after another, until we run out of the batter. 
+        Then we could do another loop, like spreading a jam on pancakes until we run out of either. </p>
+
+<p>
+  <img src="for-loop2.jpg">
+</p>
+<br>
+      <h2>Describe what the DOM is and an example of how you might interact with it. </h2>
+     <p>The DOM - Document Objects Model connects/allows all parts of a webpage to work together.</p>
+      <p>According to mozilla.org : "The Document Object Model (DOM) is a programming interface for web documents. 
+        It represents the page so that programs can change the document structure, style, and content." from 
+        <a href="https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction">Introduction to the DOM</a> .</p>
+      <p>It is a way how a browser internally represents a webpage, 
+        it provides how JS interacts with objects(content) within a website. DOM is a tandard set by by the World Wide Web Consortium
+      DOM specifies how browser interprets HTML documents. HTML document consist of elements (headers, paragraphs,lists, etc.)
+      </p><p>Elements are interpreted as objects and are called 'nodes'. 
+    Similarly we could describe the relationship between elements as an upside down 'tree'.
+    We can select and change (with JS) any element according to its place within this 'tree'. 
+    Using a browser's DevTools, and going to 'Console' we can access and manipulate elements by executing JS code.
+  </p>
+  <p><img src="dom-in-js.jpg"></p>
+  <br>
+       <h2>Explain the difference between accessing data from arrays and objects</h2>
+       <p><img src="array-example.jpg"></p>
+      <p>An array is used to store multiple elements in a single variable. 
+        It is often used when we want to store a list of elements and access them by a single variable.</p>
+        <p>We can access data values from an array by calling data access position(number) in the array.</p><p>Objects are the most important data type in JS. 
+        They are quite different from the primitive data types (Number, String, etc). 
+       Objects are used to store different types of key collections and complex entities. 
+       An object is a collection of key-value pairs. </p>
+       <p>In order to access data, we need to know its name and call it in our code.</p>
+       <p><img src="object-example.jpg"></p>
+       <br>
+    <h2>Explain what functions are and why they are helpful.</h2>
+    <p>A function is a set of statements that takes inputs, does some specific computation, and produces output. 
+      It is a set of statements that does some tasks or some computation and then returns the result to the user.</p>
+      <p>Why are functions helpful?</p>
+    <p>They are used when the code needs to be executed multiple times - avoiding repating code. 
+    Another advantage is the code change and maintenance - 
+    it is easier done at one place , then at multiple places. 
+  </p>  
+  
+  </body>
+</html>

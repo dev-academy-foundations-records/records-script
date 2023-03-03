@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UFT-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/../styles/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merienda&display=swap" rel="stylesheet">
+    <title>My Learning Journey</title>
+    </head>
+  <body>
+
+
+ <!--Navigation bar which will be the same on every page except we need to add ids so we can see what page we are on-->
+ <div class="navigation" class="flex">
+
+  <div class="button"><a href="/../index.html">Home</a></div>
+  <div class="button"><a href="/blog/blog_index/blog_index.html">Blog</a></div>
+  <div class="button"><a href="/../games_page/games.html">Games</a></div>
+  <div class="button"><a href="/../side_projects_page/side_projects.html">Side Projects</a></div>
+</div>
+
+<h1 class="title_heading">
+  IQ vs EQ
+</h1>
+
+<div class="content">
+ <br>
+  <h3 class="question">What is Emotional Intelligence?</h3>
+  <p>
+  “Emotional intelligence (EI) is the ability to perceive, interpret, demonstrate, control, and use emotions to communicate with and relate to others effectively and constructively. This ability to express and control emotions is essential, but so is the ability to understand, interpret, and respond to the emotions of others.”1
+<br>
+<p clss="image_caption">This quote was retrieved from <a href="https://www.verywellmind.com/what-is-emotional-intelligence-2795423">this website</a></p>
+    <br>
+
+<img class="EQ-Image" src="/blog/Emotional_Intelligence_Post/EQ_5_components.png" alt="visual representation of the 5 components of EQ">
+<p clss="image_caption">This image was retrieved from <a href="https://medium.com/@nhunggphamm/the-functions-emotional-intelligent-to-designers-impacts-3c47e983df23">this website</a></p>
+<br>
+
+<p>
+Essentially, EQ is understanding your own thoughts and feelings, as well as those of others.
+</p>
+
+
+
+1. were blocked on a simple problem:
+
+what was the problem?
+what problem-solving techniques did you use?
+how did you feel throughout the process?
+what did you learn?
+
+2. elegantly solved a problem.
+
+what was the problem?
+what problem-solving techniques did you use?
+how did you feel throughout the process?
+what did you learn?
+
+
+3. Reflect on how confident you feel using each of these problem-solving techniques/processes:
+
+Pseudocode
+Trying something
+Rubber ducky method
+Reading error messages
+Console.logging
+Googling
+Asking your peers for help
+Asking coaches for help
+Improving your process with reflection
+
+
+</div>
+</body>
+</html>

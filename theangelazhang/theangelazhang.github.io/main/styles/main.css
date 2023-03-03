@@ -1,0 +1,146 @@
+@charset "UTF-8";
+
+
+h1 {
+  max-width: 60%;
+  font-family: 'Sora', Arial, sans-serif;
+  /* set a minimum font size */
+  /* font-size:calc(20px + 2vw); */
+  font-size:5vw;
+  line-height: 1;
+  font-style: bold;
+  font-weight: 900; 
+  letter-spacing: -0.05em; 
+  text-transform: lowercase; 
+  display: flex; 
+  justify-content: flex-end; 
+}
+
+h2{
+  font-family: Arial, Helvetica, sans-serif;  
+}
+
+h3{
+  font-family: Arial, Helvetica, sans-serif; 
+}
+
+p{
+  font-family: Arial, Helvetica, sans-serif;  
+  /* font-size: 3vmin */
+  max-width: 500px;
+}
+
+/* ul{
+  font-family: Arial, Helvetica, sans-serif;   
+} */
+
+a {
+  color: #aa4436;
+  display: contents;
+  /* text-decoration: underline; */
+  /* background: url(../images/line.png) repeat-x left bottom; */
+}
+
+a:hover, a:active, a.title-link:visited {
+  color: grey;
+  display: contents;
+}
+
+ a.title-link, a.title-link:link, a.title-link:visited, a.title-link:active {
+  text-decoration: none;
+  color: black;
+  background: none;
+}
+
+a.title-link:hover {
+  text-decoration: none;
+  color: grey;
+  background: none;
+}
+
+strong{
+  display: contents;
+}
+
+/* format responsive boxes */
+.box {
+  display: flex; 
+  align-items: center; 
+  padding: 0 1rem;
+  /* height: 4rem auto; */
+}
+
+.boxes { 
+  max-width: 1000px;
+  margin:  60px auto 0 auto;
+  display: grid;
+  gap: 0rem;
+  grid-template-columns: 1fr 2fr;
+}
+
+@media (max-width: 300px) {
+  .boxes {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* format image */
+.collage {
+  max-width: 100%;
+  height:auto;
+}
+
+figure {
+  max-width: auto;
+  height:auto;
+  display: table;  
+  margin: 40px auto 0; 
+  padding: 0 1rem;
+}
+
+/* format caption */
+figcaption {
+      font-family: Arial, Helvetica, sans-serif;  
+      font-size: 12px;
+      font-style: italic;
+      margin: 15px 15px;  
+      text-align: right;  
+  }
+
+
+.footer {
+  max-width: 1000px;
+  font-family: Arial, Helvetica, sans-serif;  
+  font-size: 12px;
+  margin: 10% auto 0 auto;  
+  /* text-align: right;  */
+  display: flex; 
+  justify-content: flex-start; 
+}
+
+.page-title {
+  display: flex;
+  align-items: flex-start;
+  margin: 100px auto;
+}
+
+.blog-text {
+  display: flex;
+  align-items: flex-start;
+  margin: -70px 0;
+}
+
+/* .sidebar{
+  display: flex;
+  align-items: flex-start;
+} */
+
+.image {
+  display: flex;
+  /* flex-direction: column; */
+  width: 300px;
+  min-width: 50%;
+  align-items: center;
+  /* justify-content: flex-start;
+  align-items: flex-start; */
+}

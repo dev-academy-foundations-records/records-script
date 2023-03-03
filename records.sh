@@ -3,12 +3,13 @@
 
 
 # change these variables :)
-students=("github-username")
-cohort="COHORT-YEAR"
+students=("sparrow-peppermint" "theangelazhang" "jpjh1001" "maycon-assis" "Timothy-itayi" "Dethorasis" "lualin" "yoho4613" "sarah-lewis-1808" "Robert-Haluza" "ian-jl-chua" "sticklandsm" "phattharanit-pewklieng" "Ilse-Swanepoel" "damir-kurtovic" "milo-palmer" "Sue-Raisianzadeh" "caroline-stadnicki" "Kurt-Leong" "kason-cheong" "pulsarbeam" "min-suh" "Tiaanz" "KemaxLong" "dionatan-narciso" "zzzzzzzzzzzzzzzzzzzzl")
+
+cohort="HARAKEKE-2023"
 
 # create your own access token (with repo permissions)
 # https://github.com/settings/tokens/new?scopes=repo&description=Foundations%20records%20script
-my_access_token="asecret"
+my_access_token="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"
 
 # change these at your own risk ;)
 # (aka pls don't)

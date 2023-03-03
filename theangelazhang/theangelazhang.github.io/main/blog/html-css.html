@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>hello world - Relative, absolute and fixed positioning explained </title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sora">
+  <body>
+    
+  <div class="boxes">
+
+    <div class="box"><h1><a href="../index.html" class="title-link">hello world</a></h1></div>
+
+    <div class="box page-title">
+    <h2 style="width: clamp(0px, 50vw, 500px)">Relative, absolute and fixed positioning explained</h2>
+    <h3>23 January 2023</h3></div> 
+
+    
+    <div class="box" class="title-link" style="position: fixed; top: 50%;"><p><a href="../index.html" class="title-link">← back</a></p></div> 
+    <div class="box"></div>
+      
+    <div class="box blog-text">
+    <p>
+      It can be hard to place CSS elements where we want them to go. Thankfully we have some positioning commands up our sleeve, namely relative, absolute and fixed positioning.<br><br>
+      
+      <strong>Relative positioning</strong><br><br>
+
+      Allows you to adjust the position of an element relative to its normal position. For example, the code below moves the rectangle 50px horizontally from where it would usually be.<br><br>
+      
+      <span ><img src="../images/relative_position_code.png" alt="Relative position code" class="image"></span>
+      <span><img src="../images/relative_position.png" alt="Relative position result" class="image"></span>
+      <br><br>
+  
+      <strong>Absolute positioning</strong> <br><br>
+
+      Lets you position an element exactly where you want it to be on the page. The values will be relative to the next parent element with relative (or absolute) positioning. If there isn’t a parent, then the positioning will be relative to the html element — i.e. relative to the page itself. <br><br>
+
+      <span><img src="../images/absolute_position_code.png" alt="Absolute position code" class="image"></span>
+      <span><img src="../images/absolute_position.png" alt="Absolute position result" class="image"></span>
+      <br><br>
+
+      <strong>Fixed positioning</strong><br><br>
+
+      Fixes the element to the viewport (the browser window) and doesn’t change when scrolling. Useful for navigation bars that you want to see all the time. The back link to the left is an example of a fixed element.<br><br>
+    
+      <span><img src="../images/fixed_position_code.png" alt="Fixed position code" class="image"></span>
+    </div> 
+      
+
+      </p>
+  
+  </div>    
+  </body>
+<footer class="footer">
+  © Angela Zhang 2023
+</footer>
+
+
+</html>

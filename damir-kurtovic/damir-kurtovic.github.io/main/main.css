@@ -1,0 +1,52 @@
+ /*html {
+  background: url(https://damir-kurtovic.github.io/blog/2560x1600_px_field_landscape_nature-692730.jpg) no-repeat center center fixed;
+} */
+
+body {
+  background-color: #A0AECD;
+  font-family: monospace;
+}
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: #00BFFF;
+  overflow: hidden;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #f2f2f2;
+    color: black;
+  }
+  
+  /* Add a color to the active/current link */
+  .topnav a.active {
+  background-color: #FFD700;
+  color: black;
+  }
+p {
+  font-size: 20px;
+}
+.button {
+  font-size: 20px;
+}
+.mtimage {
+  height: 300px;
+  background: url("mountains.jpg");
+  background-size: contain;
+}
+ ol li{
+  font-size: 20px;
+ } 
+ h2 {
+  text-decoration: underline; 
+ }
