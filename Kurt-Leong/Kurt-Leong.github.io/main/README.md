@@ -1,1 +1,0 @@
-# kurt-leong.github.io

@@ -1,1 +1,0 @@
-# phattharanit-pewklieng.github.io
