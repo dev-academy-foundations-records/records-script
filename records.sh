@@ -31,7 +31,7 @@ function get_records {
         echo "\n------ $name ------" && log "\n------ $name ------"
         cd $name 
 
-        repos=("$name.github.io" "reflections" "DOM-interactions" "DOM-applying-classes" "javascript-intro" "javascript-methods" "javascript-kata" "javascript-cafe" "tic-tac-toe" "javascript-carnival" "calculator" "minesweeper")
+        repos=("$name.github.io" "reflections" "tic-tac-toe" "javascript-carnival")
 
         for repo in "${repos[@]}"; do
             copy_repo $repo
