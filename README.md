@@ -19,10 +19,7 @@ chmod +x records.sh
 <details open>
 <summary>On Windows and receiving error: `./records.sh: 5: Syntax error: "(" unexpected`</summary>
 
-  1. Most likely you don't have Bash. There is a quick workaround.
-  2. Run `echo $SHELL`
-  3. Copy the output e.g. `/usr/bin/zsh` 
-  4. Paste to line 1 of `records.sh` after `#!` e.g. change `#!/bin/sh` to `#!/usr/bin/zsh`
+  1. Try changing line 1 from `#!/bin/sh` to `#!/usr/bin/env bash`
 
 </details>
 
